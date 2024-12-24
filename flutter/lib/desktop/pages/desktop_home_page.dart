@@ -429,9 +429,9 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         !isCardClosed &&
         bind.mainUriPrefixSync().contains('rustdesk')) {
       return buildInstallCard(
-          "Status",
-          "${translate("new-version-of-{${bind.mainGetAppNameSync()}}-tip")} (${bind.mainGetNewVersion()}).",
-          "Click to download", () async {
+          "",
+          "",
+          "", () async {
         final Uri url = Uri.parse('https://rustdesk.com/download');
         await launchUrl(url);
       }, closeButton: true);
